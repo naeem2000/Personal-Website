@@ -1,0 +1,393 @@
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    animation: fadein 1.2s;
+    -moz-animation: fadein 1.2s; /* Firefox */
+    -webkit-animation: fadein 1.2s; /* Safari and Chrome */
+    -o-animation: fadein 1.2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Head Section */
+
+header {
+    padding: 50px;
+    background-color: rgb(65, 55, 44);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 5px;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+.active {
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+i {
+    color: white;
+    font-size: 25px;
+    float: right;
+    letter-spacing: 1em;
+}
+
+header img {
+    width: 40vh;
+    padding-top: 4vh;
+}
+
+.head {
+    display: inline-flex;
+    font-size: 11px;
+    line-height: 30px;
+}
+
+.head h1 {
+    padding-top: 80px;
+    padding-left: 15px;
+    color: white;
+    font-size: 23px;
+}
+
+.head p {
+    font-size: 17px;
+}
+
+nav    {
+    float: right;
+    padding-top: 100px;
+}
+
+nav a {
+    padding: 10px;
+    font-size: 15px;
+}
+
+@media only screen and (min-width:510px) and (max-width:1100px) {
+    /* For tablets: */
+    header {
+        padding: 20px;
+        height: 60vh;
+        text-align: center;
+    }
+    header a {
+        line-height: 2em;
+        padding-right: 40px;
+        font-size: 22px;
+    }
+    header i {
+        font-size: 35px;
+    }
+    header img {
+        padding-left: 10px;
+    }
+    .head {
+        display: block;
+        padding-top: 20px;
+    }
+    .head h1 {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 35px;
+    }
+    nav    {
+        padding-top: 30px;
+        text-align: center;
+        padding-right: 170px;
+    }
+    .head p {
+        padding-top: 10px;
+        font-size: 25px;
+    }
+    nav a {
+        padding: 10px;
+        text-align: center;
+    }
+  }
+
+  @media only screen   
+  and (min-device-width : 300px)   
+  and (max-device-width : 390px)  {
+    /* For mobile phones: */
+    header {
+        height: 80vh;
+        padding: 5px;
+    }
+    header a i {
+        padding-left: 24px;
+    }
+    header a {
+        line-height: 2em;
+        font-size: 15px;
+        display: inline-block;
+    }
+    header img {
+        padding-left: 0;
+    }
+    .head {
+        display: block;
+        padding-top: 20px;
+        text-align: center;
+        line-height: 20px;
+    }
+    .head h1 {
+        padding-top: 20px;
+        padding-left: 0px;
+        font-size: 20px;
+    }
+    nav    {
+        padding-top: 20px;
+        text-align: center;
+    }
+    p {
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    nav a {
+        padding: 10px;
+        font-size: 15px;
+    }
+  }
+  
+  @media only screen   
+  and (min-device-width : 391px)   
+  and (max-device-width : 490px) {
+    /* For mobile phones: */
+    header {
+        height: 70vh;
+        padding: 0;
+    }
+    header i {
+        padding-top: 20px;
+        padding-right: 40px;
+    }
+     a {
+        line-height: 3em;
+        font-size: 15px;
+    }
+    header img {
+        padding-left: 0;
+    }
+    .head {
+        display: block;
+        padding-top: 20px;
+        text-align: center;
+        line-height: 20px;
+    }
+    .head h1 {
+        padding-top: 20px;
+        padding-left: 0px;
+        font-size: 20px;
+    }
+    nav    {
+        padding-top: 20px;
+        padding: 25px;
+        text-align: center;
+    }
+    p {
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    nav a {
+        padding: 10px;
+        font-size: 15px;
+    }
+  }
+
+/* Body Section */
+
+.area   {
+    padding: 70px;
+    background-color:#795a5a;
+    height: 90vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+    height: 90vh;
+    text-align: center;
+    color: white;
+}
+
+.container h1 {
+    padding: 30px;
+    font-size: 40px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+
+  button[type=submit] {
+    background-color: #925a5a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+  }
+  
+  button[type=submit]:hover {
+    background-color: #be7b7b;
+  }
+
+  .text {
+      padding: 70px;
+      background-color: #473838;
+  }
+
+.image {
+    background-image: url('images/laptop-mockup-in-an-office-free-photo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen   
+and (min-device-width : 300px)   
+and (max-device-width : 390px)  {
+    /* For mobile phones: */
+    .container {
+        display:block;
+    }
+    .area {
+      padding: 0;  
+    }
+    .text {
+        padding: 20px;
+    }
+    input[type=text], select, textarea {
+        width: 90%;
+    }
+    input[type=email], select, textarea {
+        width: 88%;
+    }
+    .image {
+        height: 100%;
+    }
+  }
+  @media only screen   
+  and (min-device-width : 391px)   
+  and (max-device-width : 490px) {
+    .container {
+        display:block;
+    }
+    .area {
+      padding: 0;  
+    }
+    .text {
+        padding: 20px;
+    }
+    input[type=text], select, textarea {
+        width: 90%;
+    }
+    input[type=email], select, textarea {
+        width: 88%;
+    }
+    .image {
+        height: 100%;
+    }
+  }
+  /* Footer Section */
+
+  footer  {
+    background-color: rgb(65, 55, 44);
+    text-align: center;
+    font-family: sans-serif;
+    color: aliceblue;
+    padding: 30px;
+}
+
+@media only screen and (max-width:450px) {
+    /* For mobile phones: */
+    footer  {
+        background-color: rgb(65, 55, 44);
+        text-align: center;
+        color: aliceblue;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+        font-size: 10px;
+}
+}
+
+@media only screen   
+and (min-device-width : 391px)   
+and (max-device-width : 490px) {
+    footer  {
+        background-color: rgb(65, 55, 44);
+        text-align: center;
+        color: aliceblue;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:1100px) {
+/* For tablets */
+    .area {
+        height: 53vh;
+    }
+    .container {
+        height: 50vh;
+    }
+    .text {
+        height: 42vh;
+    }
+}
+
+/* Laptop sizes */
+
+/* For 1366 Resolution */  
+@media only screen   
+and (min-width: 1100px)   
+and (max-width: 1380px)  {
+ .area {
+     height: 99vh;
+ }
+}
+
+@media only screen   
+and (min-width: 1370px)  
+and (max-width: 1605px)  {
+    .area {
+        height: 100vh;
+    }
+   }

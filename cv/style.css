@@ -1,0 +1,442 @@
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    animation: fadein 1.2s;
+    -moz-animation: fadein 1.2s; /* Firefox */
+    -webkit-animation: fadein 1.2s; /* Safari and Chrome */
+    -o-animation: fadein 1.2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Head Section */
+
+header {
+    padding: 50px;
+    background-color: rgb(65, 55, 44);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 5px;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+.active {
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+i {
+    color: white;
+    font-size: 25px;
+    float: right;
+    letter-spacing: 1em;
+}
+
+header img {
+    width: 40vh;
+    padding-top: 4vh;
+}
+
+.head {
+    display: inline-flex;
+    font-size: 11px;
+    line-height: 30px;
+}
+
+.head h1 {
+    padding-top: 80px;
+    padding-left: 15px;
+    color: white;
+    font-size: 23px;
+}
+
+.head p {
+    font-size: 17px;
+}
+
+nav    {
+    float: right;
+    padding-top: 100px;
+}
+
+nav a {
+    padding: 10px;
+    font-size: 15px;
+}
+
+@media only screen and (min-width:500px) and (max-width:1100px) {
+    /* For tablets: */
+    header {
+        padding: 20px;
+        height: 50vh;
+        text-align: center;
+    }
+    header a {
+        line-height: 2em;
+        padding-right: 52px;
+        font-size: 22px;
+    }
+    header img {
+        padding-left: 35px;
+    }
+    .head {
+        display: block;
+        padding-top: 20px;
+    }
+    .head h1 {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 35px;
+    }
+    nav    {
+        padding-top: 20px;
+        text-align: center;
+        padding-right: 13vh;
+    }
+    .head p {
+        padding-top: 10px;
+        font-size: 25px;
+    }
+    nav a {
+        padding: 10px;
+        text-align: center;
+    }
+  }
+
+  @media only screen   
+  and (min-device-width : 300px)   
+  and (max-device-width : 390px)  {
+    /* For mobile phones: */
+    header {
+        height: 77vh;
+        padding: 17px;
+    }
+    header a i {
+        padding-left: 19px;
+    }
+    header a {
+        line-height: 2em;
+        font-size: 15px;
+        display: inline-block;
+    }
+    header img {
+        padding-left: 0;
+    }
+    .head {
+        display: block;
+        padding-top: 20px;
+        text-align: center;
+        line-height: 20px;
+    }
+    .head h1 {
+        padding-top: 20px;
+        padding-left: 0px;
+        font-size: 20px;
+    }
+    nav    {
+        padding-top: 20px;
+        text-align: center;
+    }
+    p {
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    nav a {
+        padding: 10px;
+        font-size: 15px;
+    }
+  }
+
+  @media only screen   
+  and (min-device-width : 391px)   
+  and (max-device-width : 490px) {
+    /* For mobile phones: */
+    header {
+        height: 70vh;
+        padding: 0;
+    }
+    header i {
+        padding-top: 20px;
+        padding-right: 40px;
+    }
+     a {
+        line-height: 3em;
+        font-size: 15px;
+    }
+    header img {
+        padding-left: 0;
+    }
+    .head {
+        display: block;
+        padding-top: 20px;
+        text-align: center;
+        line-height: 20px;
+    }
+    .head h1 {
+        padding-top: 20px;
+        padding-left: 0px;
+        font-size: 20px;
+    }
+    nav    {
+        padding-top: 20px;
+        padding: 25px;
+        text-align: center;
+    }
+    p {
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    nav a {
+        padding: 10px;
+        font-size: 15px;
+    }
+  }
+  
+/* Body Section */
+
+.parallax {
+    /* The image used */
+    background-image: url("images/5cbf5aa5b14bf42341039a2f.jpg");
+  
+    /* Set a specific height */
+    height: 70vh; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 22vh;
+    padding-left: 75vh;
+    padding-right: 5vh;
+  }
+  
+   .container .content {
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 50vh;
+    height: 20vh;
+    padding: 20px;
+    padding-top: 5vh;
+    text-align: center;
+    line-height: 70px;
+  }
+
+  .area   {
+    padding: 70px;
+    height: auto;
+    color:#fff;
+    background-color:#5e4747;
+    text-align:center;
+}
+
+
+.content h1{
+    font-size: 30px;
+}
+
+h1 {
+    padding: 5px;
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+  @media only screen and (min-width:500px) and (max-width:1100px) {
+    /* For tablets: */
+    .parallax {
+        height: 70vh;
+    }
+    .container {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 25.5vh;
+        padding-left: 11.5vh;
+      }
+    .container .content {
+        bottom: 0;
+        padding: 20px;
+        text-align: center;
+        padding-top: 4vh;
+        line-height: 55px;
+        height: 13vh;
+      }
+  }
+
+  @media only screen and (min-width:300px) and (max-width:390px) {
+    /* For mobile phones: */
+    .container {
+        padding-left: 7.5vh;
+        padding-top: 20vh;
+    }
+    .container .content {
+        font-size: 15px;
+        line-height: 40px;
+        padding-top: 45px;
+        height: 20vh;
+        width: 35vh;
+    }
+    .content h1{
+        font-size: 20px;
+    }
+    .skills {
+        columns: unset;
+        font-size: 13px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .area {
+        font-size: 13px;
+    }
+  }
+
+  @media only screen and (min-width:391px) and (max-width:670px) {
+    .container {
+        padding-left: 6.5vh;
+        padding-top: 25vh;
+    }
+    .container .content {
+        font-size: 15px;
+        line-height: 40px;
+        padding-top: 19px;
+        height: 14vh;
+        width: 34vh;
+    }
+    .content h1{
+        font-size: 20px;
+    }
+    .skills {
+        columns: unset;
+        font-size: 13px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .area {
+        font-size: 13px;
+    }
+  }
+/* Footer Section */
+
+footer  {
+    background-color: rgb(65, 55, 44);
+    text-align: center;
+    font-family: sans-serif;
+    color: aliceblue;
+    padding: 30px;
+}
+
+@media only screen and (max-width:450px) {
+    /* For mobile phones: */
+    footer  {
+        background-color: rgb(65, 55, 44);
+        text-align: center;
+        color: aliceblue;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+        font-size: 10px;
+}
+}
+
+@media only screen   
+and (min-device-width : 391px)   
+and (max-device-width : 490px) {
+    footer  {
+        background-color: rgb(65, 55, 44);
+        text-align: center;
+        color: aliceblue;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+
+/* Laptop sizes */
+
+/* For 1366 Resolution */  
+@media only screen   
+and (min-width: 1100px)   
+and (max-width: 1366px)  {
+    .parallax {
+        height: 85vh;
+    }
+    .container {
+        padding-top: 25vh;
+    }
+    .container .content {
+        padding-left: 4vh;
+        width: 65vh;
+        height: 25vh;
+        padding-top: 50px;
+        line-height: 70px;
+        text-align: center;
+    }
+
+    .container2 {
+        height: 111.5vh;
+    }
+}
+
+/* Desktop sizes */
+
+@media only screen   
+and (min-width: 1370px)  
+and (max-width: 1605px)  {
+    .container {
+        padding-top: 19.7vh;
+    }
+    .container .content {
+        padding-left: 4vh;
+        width: 60vh;
+        height: 25vh;
+        padding-top: 40px;
+        line-height: 90px;
+        text-align: center;
+    }
+
+    .container2 {
+        height: 120vh;
+    }
+}
