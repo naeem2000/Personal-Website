@@ -49,6 +49,12 @@ h6 {
   font-weight: 400;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
 .container {
   max-width: 80%;
   max-height: auto;
@@ -148,8 +154,9 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("");
+  background-image: url("./data/images/home-bg.jpg");
   background-size: cover;
+  opacity: 0.5;
   background-attachment: fixed;
   z-index: -1;
   width: 100%;
@@ -166,4 +173,36 @@ section {
   font-size: 60px;
   font-weight: 600;
   color: var(--primaryColor);
+}
+
+.heading {
+  font-size: 30px;
+  color: var(--primaryColor);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about .primaryBtn {
+  margin-left: 20px;
+}
+
+.about .heading {
+  text-align: left;
+  margin: 0;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.left img {
+  border-radius: 100%;
+}
+
+.right {
+  width: 50%;
 }

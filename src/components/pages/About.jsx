@@ -1,5 +1,6 @@
 import { about } from "../../data/dummydata";
 import { Heading } from "../common/Heading";
+import Me from "../../data/images/me-avatar.jpg";
 import React from "react";
 
 export const About = () => {
@@ -10,12 +11,12 @@ export const About = () => {
           {about.map((val, i) => (
             <>
               <div className="left">
-                <img src={val.cover} alt="coverAbout" />
+                <img width={"60%"} src={Me} alt="coverAbout" />
               </div>
               <div className="right">
                 <Heading title="About me" />
                 <p>{val.desc}</p>
-                <p>{val.desc}</p>
+                <p>{val.desc1}</p>
                 <button>Download CV</button>
                 <button className="primaryBtn">Download CV</button>
               </div>

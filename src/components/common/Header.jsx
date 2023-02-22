@@ -11,7 +11,7 @@ export const Header = () => {
       <header>
         <div className="container flexsb">
           <div className="logo">
-            <img src={logo} alt="logo" />
+            <img width={"70%"} src={logo} alt="logo" />
           </div>
           <div className={responsive ? "hideMenu" : "nav"}>
             {navLink.map((links, i) => (
