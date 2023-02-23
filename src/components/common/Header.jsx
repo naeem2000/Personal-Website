@@ -1,5 +1,5 @@
 import logo from "../../data/images/Naeem-logo.png";
-import { navLink } from "../../data/dummydata";
+import { navLink } from "../../data/data";
 import { Menu } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";

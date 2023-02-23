@@ -1,4 +1,4 @@
-import { home } from "../../data/dummydata";
+import { home } from "../../data/data";
 import Typewriter from "typewriter-effect";
 import React from "react";
 

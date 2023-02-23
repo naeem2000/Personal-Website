@@ -18,6 +18,13 @@ import {
   YouTube,
 } from "@mui/icons-material";
 
+import uploadToFirebase from "./images/file-upload-to-firebase-webApp.png";
+import gdClone from "./images/google-drive-clone.PNG";
+import carwash from "./images/shafieks-carwash.png";
+import jobList from "./images/job-listing.PNG";
+import weather from "./images/weather.PNG";
+import faceDet from "./images/face-det.PNG";
+
 export const navLink = [
   {
     url: "/",
@@ -94,7 +101,7 @@ export const services = [
   {
     id: 6,
     icon: <BarChart />,
-    title: "Awesome Support",
+    title: "High Performance Mobile Apps",
     desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
   },
 ];
@@ -102,70 +109,76 @@ export const project = [
   {
     id: 1,
     icon: <CloudOutlined />,
-    num: "89",
-    title: "HAPPY CLIENTS",
+    num: "3",
+    title: "HAPPY EMPLOYERS",
   },
   {
     id: 2,
     icon: <FavoriteBorder />,
-    num: "231",
-    title: "PROJECTS COMPLEATED",
+    num: "22",
+    title: "PROJECTS COMPLETED",
   },
   {
     id: 3,
     icon: <Public />,
-    num: "108",
+    num: "30",
     title: "FILES DOWNLOADED",
   },
   {
     id: 4,
     icon: <PersonOutlined />,
-    num: "1446",
-    title: "LIENS OF CODE",
+    num: "746",
+    title: "LINES OF CODE",
   },
 ];
 export const portfolio = [
   {
     id: 1,
-    cover: "../images/port/port1.jpg",
+    cover: carwash,
     name: "Brand",
-    category: "marketing",
-    title: "Brex Logo",
+    category: "web",
+    title: "Shafiek's Carwash",
+    handle: "https://shafiekscarwash.netlify.app",
   },
   {
     id: 2,
-    cover: "../images/port/port2.jpg",
+    cover: weather,
     name: "Brand",
-    category: "design",
-    title: "Brex Logo",
+    category: "development",
+    title: "Weather App",
+    handle: "https://weatherreactjsweb.netlify.app/",
   },
   {
     id: 3,
-    cover: "../images/port/port3.jpg",
+    cover: faceDet,
     name: "Brand",
     category: "development",
-    title: "Brex Logo",
+    title: "Face Detector (Desktop)",
+    handle: "https://face-detect-reactjs.netlify.app/",
   },
   {
     id: 4,
-    cover: "../images/port/port4.jpg",
+    cover: gdClone,
     name: "Brand",
-    category: "marketing",
-    title: "Brex Logo",
+    category: "mobile",
+    title: "Google Drive Clone",
+    handle: "https://drive-clone-fe7b2.web.app/",
   },
   {
     id: 5,
-    cover: "../images/port/port5.jpg",
+    cover: jobList,
     name: "Brand",
-    category: "design",
-    title: "Brex Logo",
+    category: "web",
+    title: "Job Listing",
+    handle: "https://job-listing-39b59.web.app/",
   },
   {
     id: 6,
-    cover: "../images/port/port6.jpg",
+    cover: uploadToFirebase,
     name: "Brand",
-    category: "development",
-    title: "Brex Logo",
+    category: "mobile",
+    title: "File Upload to Firebase Web App",
+    handle: "https://younglings-uploadtofirebase.netlify.app",
   },
 ];
 export const testimonials = [

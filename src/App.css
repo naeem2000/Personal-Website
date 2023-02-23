@@ -57,7 +57,7 @@ h6 {
 
 .container {
   max-width: 80%;
-  max-height: auto;
+  margin: auto;
 }
 
 .flexsb {
@@ -205,4 +205,122 @@ section {
 
 .right {
   width: 50%;
+}
+
+/* ----------ABOUT----------- */
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+/* ----------SERVICES----------- */
+
+.services .box {
+  background-color: var(--primaryBackground);
+  padding: 35px;
+}
+
+.services i {
+  color: var(--primaryColor);
+}
+
+.services h3 {
+  margin-top: 20px;
+}
+
+/* ----------COUNTER----------- */
+
+/*---------services-------------*/
+.grid4 {
+  grid-template-columns: repeat(4, 1fr);
+  height: 50vh;
+  place-items: center;
+  text-align: center;
+}
+
+/*---------counter-------------*/
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  position: relative;
+}
+.hero.counter::after {
+  background-image: url("./data/images/counter-bg.jpg");
+  opacity: 0.1;
+  height: 50vh;
+}
+.counter h1 {
+  margin: 0;
+}
+/*---------counter-------------*/
+/*---------portfolio-------------*/
+
+article {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+article img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+article .box {
+  position: relative;
+  transition: 0.5s;
+  border-radius: 30px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 2;
+}
+.overlay::after {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primaryColor);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: -1;
+}
+article .box:hover .overlay::after,
+article .box:hover .overlay {
+  opacity: 1;
+}
+
+.catButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.catButton button {
+  text-transform: capitalize;
+  margin-right: 20px;
 }

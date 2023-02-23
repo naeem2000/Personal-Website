@@ -1,4 +1,4 @@
-import { about } from "../../data/dummydata";
+import { about } from "../../data/data";
 import { Heading } from "../common/Heading";
 import Me from "../../data/images/me-avatar.jpg";
 import React from "react";
