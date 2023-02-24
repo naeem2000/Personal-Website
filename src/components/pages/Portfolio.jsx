@@ -11,6 +11,7 @@ export const Portfolio = () => {
   const filterItems = (category) => {
     const newItems = portfolio.filter((item) => item.category === category);
     setList(newItems);
+    setCategory();
 
     if (category === "all") {
       setList(portfolio);
@@ -27,6 +28,7 @@ export const Portfolio = () => {
               <button
                 className="primaryBtn"
                 onClick={() => filterItems(category)}
+                data-aos="zoom-out-down"
               >
                 {category}
               </button>
@@ -36,7 +38,7 @@ export const Portfolio = () => {
         <div className="content grid3">
           {list.map((items, i) => (
             <a href={items.handle} target="__blank" rel="noreferror">
-              <div className="box">
+              <div className="box" data-aos="fade-up">
                 <div className="img" key={i}>
                   <img src={items.cover} alt="portfolio" />
                 </div>

@@ -24,6 +24,8 @@ import carwash from "./images/shafieks-carwash.png";
 import jobList from "./images/job-listing.PNG";
 import weather from "./images/weather.PNG";
 import faceDet from "./images/face-det.PNG";
+import mari from "./images/marilize.jpg";
+import rob from "./images/rob.jpeg";
 
 export const navLink = [
   {
@@ -185,23 +187,16 @@ export const testimonials = [
   {
     id: 1,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
-    image: "./images/testimonials/team-1.png",
+    image: rob,
     name: "Alamin Musa",
     post: "Front End Developer",
   },
   {
     id: 2,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
-    image: "./images/testimonials/team-2.png",
+    image: mari,
     name: "Alex Ander",
     post: "Back End Developer",
-  },
-  {
-    id: 3,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
-    image: "./images/testimonials/team-3.png",
-    name: "GorkCoder",
-    post: "React Developer",
   },
 ];
 export const blog = [

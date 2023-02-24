@@ -18,8 +18,10 @@ export const Hero = () => {
                 }}
               />
             </h1>
-            <p>{val.desc}</p>
-            <button className="primaryBtn">Download CV</button>
+            <p data-aos="fade-left">{val.desc}</p>
+            <button className="primaryBtn" data-aos="fade-up-right">
+              Download CV
+            </button>
           </div>
         ))}
       </section>
