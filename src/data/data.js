@@ -182,6 +182,30 @@ export const portfolio = [
     title: "File Upload to Firebase Web App",
     handle: "https://younglings-uploadtofirebase.netlify.app",
   },
+  {
+    id: 7,
+    cover: uploadToFirebase,
+    name: "Brand",
+    category: "mobile",
+    title: "File Upload to Firebase Web App",
+    handle: "https://younglings-uploadtofirebase.netlify.app",
+  },
+  {
+    id: 8,
+    cover: uploadToFirebase,
+    name: "Brand",
+    category: "mobile",
+    title: "File Upload to Firebase Web App",
+    handle: "https://younglings-uploadtofirebase.netlify.app",
+  },
+  {
+    id: 9,
+    cover: uploadToFirebase,
+    name: "Brand",
+    category: "mobile",
+    title: "File Upload to Firebase Web App",
+    handle: "https://younglings-uploadtofirebase.netlify.app",
+  },
 ];
 export const testimonials = [
   {
