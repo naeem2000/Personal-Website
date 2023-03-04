@@ -20,7 +20,7 @@ export const Testimonials = () => {
         <div className="container">
           <Slider {...settings}>
             {testimonials.map((val, i) => (
-              <>
+              <div key={i}>
                 <div className="box" key={i}>
                   <i data-aos="zoom-out-up">
                     <FormatQuote />
@@ -32,7 +32,7 @@ export const Testimonials = () => {
                   <h3 data-aos="zoom-out-left">{val.name}</h3>
                   <label data-aos="zoom-out">{val.post}</label>
                 </div>
-              </>
+              </div>
             ))}
           </Slider>
         </div>

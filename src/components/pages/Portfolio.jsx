@@ -24,8 +24,9 @@ export const Portfolio = () => {
         <div className="container">
           <Heading title="Portfolio" />
           <div className="catButton">
-            {category.map((category) => (
+            {category?.map((category, i) => (
               <button
+                key={i}
                 className="primaryBtn"
                 onClick={() => filterItems(category)}
                 data-aos="zoom-out-down"
@@ -36,10 +37,10 @@ export const Portfolio = () => {
           </div>
         </div>
         <div className="content grid3">
-          {list.map((items, i) => (
-            <a href={items.handle} target="__blank" rel="noreferror">
+          {list?.map((items, i) => (
+            <a href={items.handle} target="__blank" rel="noreferror" key={i}>
               <div className="box" data-aos="fade-up">
-                <div className="img" key={i}>
+                <div className="img">
                   <img src={items.cover} alt="portfolio" />
                 </div>
                 <div className="overlay">

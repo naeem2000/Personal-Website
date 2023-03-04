@@ -31,8 +31,8 @@ export const Contact = () => {
               </form>
             </div>
             <div className="left">
-              {contact.map((item) => (
-                <div className="box" data-aos="zoom-in">
+              {contact.map((item, i) => (
+                <div className="box" data-aos="zoom-in" key={i}>
                   <i>{item.icon}</i>
                   <p>{item.text1}</p>
                   <p>{item.text2}</p>

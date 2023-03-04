@@ -326,12 +326,12 @@ article .box:hover .overlay {
   align-items: center;
   justify-content: center;
   text-align: center;
+  height: 90vh;
 }
-.testimonials::after {
-  background-image: url("");
-}
+
 .testimonials .box {
   max-width: 100%;
+  height: max-content;
 }
 .testimonials i {
   background-color: var(--white);
@@ -407,15 +407,14 @@ footer i {
     height: 60vh;
   }
   .heroContent {
-    max-width: 100%;
+    width: 100%;
   }
 
   .hero::after {
-    background-image: url("");
     background-size: cover;
     object-fit: cover;
     width: 100%;
-    height: 60vh;
+    height: max-content;
   }
   section {
     height: auto;
@@ -436,5 +435,8 @@ footer i {
   article {
     margin: 0;
     padding-bottom: 50px;
+  }
+  .catButton {
+    overflow-x: scroll;
   }
 }

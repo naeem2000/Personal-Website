@@ -18,7 +18,7 @@ export const About = () => {
                   data-aos="fade-down-right"
                 />
               </div>
-              <div className="right" data-aos="fade-down-left">
+              <div className="right" data-aos="fade-down-left" key={i}>
                 <Heading title="About me" />
                 <p>{val.desc}</p>
                 <p>{val.desc1}</p>
