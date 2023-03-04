@@ -1,5 +1,5 @@
-import { home } from "../../data/data";
 import Typewriter from "typewriter-effect";
+import { home } from "../../data/data";
 import React from "react";
 
 export const Hero = () => {

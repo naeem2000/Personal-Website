@@ -16,6 +16,8 @@ import {
   Twitter,
   Instagram,
   YouTube,
+  GitHub,
+  LinkedIn,
 } from "@mui/icons-material";
 
 import uploadToFirebase from "./images/file-upload-to-firebase-webApp.png";
@@ -133,150 +135,127 @@ export const project = [
     title: "LINES OF CODE",
   },
 ];
-export const portfolio = [
+export const portfolio1 = [
   {
     id: 1,
     cover: carwash,
-    name: "Brand",
-    category: "web",
     title: "Shafiek's Carwash",
     handle: "https://shafiekscarwash.netlify.app",
   },
   {
     id: 2,
     cover: weather,
-    name: "Brand",
-    category: "development",
     title: "Weather App",
     handle: "https://weatherreactjsweb.netlify.app/",
   },
   {
     id: 3,
     cover: faceDet,
-    name: "Brand",
-    category: "development",
     title: "Face Detector (Desktop)",
     handle: "https://face-detect-reactjs.netlify.app/",
   },
   {
     id: 4,
     cover: gdClone,
-    name: "Brand",
-    category: "mobile",
     title: "Google Drive Clone",
     handle: "https://drive-clone-fe7b2.web.app/",
   },
   {
     id: 5,
     cover: jobList,
-    name: "Brand",
-    category: "web",
     title: "Job Listing",
     handle: "https://job-listing-39b59.web.app/",
   },
   {
     id: 6,
     cover: uploadToFirebase,
-    name: "Brand",
-    category: "mobile",
-    title: "File Upload to Firebase Web App",
-    handle: "https://younglings-uploadtofirebase.netlify.app",
-  },
-  {
-    id: 7,
-    cover: uploadToFirebase,
-    name: "Brand",
-    category: "mobile",
-    title: "File Upload to Firebase Web App",
-    handle: "https://younglings-uploadtofirebase.netlify.app",
-  },
-  {
-    id: 8,
-    cover: uploadToFirebase,
-    name: "Brand",
-    category: "mobile",
-    title: "File Upload to Firebase Web App",
-    handle: "https://younglings-uploadtofirebase.netlify.app",
-  },
-  {
-    id: 9,
-    cover: uploadToFirebase,
-    name: "Brand",
-    category: "mobile",
     title: "File Upload to Firebase Web App",
     handle: "https://younglings-uploadtofirebase.netlify.app",
   },
 ];
-export const testimonials = [
+
+export const portfolio2 = [
   {
     id: 1,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
-    image: rob,
-    name: "Alamin Musa",
-    post: "Front End Developer",
+    cover: uploadToFirebase,
+    title: "File Upload to Firebase Web App",
+    handle: "https://younglings-uploadtofirebase.netlify.app",
   },
   {
     id: 2,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
-    image: mari,
-    name: "Alex Ander",
-    post: "Back End Developer",
-  },
-];
-export const blog = [
-  {
-    id: 1,
-    title: "Master These Awesome",
-    date: "Jun 27, 2022",
-    author: "Dorian Gray",
-    desc: "Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been",
-    cover: "./images/blog/b1.png",
-  },
-  {
-    id: 2,
-    title: "Best Design Items to Appeal",
-    date: "Jun 27, 2022",
-    author: "Dorian Gray",
-    desc: "Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been",
-    cover: "./images/blog/b2.png",
+    cover: uploadToFirebase,
+    title: "File Upload to Firebase Web App",
+    handle: "https://younglings-uploadtofirebase.netlify.app",
   },
   {
     id: 3,
-    title: "The 20 Best Lightroom Presets",
-    date: "Jun 27, 2022",
-    author: "Dorian Gray",
-    desc: "Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been",
-    cover: "./images/blog/b3.png",
+    cover: uploadToFirebase,
+    title: "File Upload to Firebase Web App",
+    handle: "https://younglings-uploadtofirebase.netlify.app",
+  },
+  {
+    id: 4,
+    cover: uploadToFirebase,
+    title: "File Upload to Firebase Web App",
+    handle: "https://younglings-uploadtofirebase.netlify.app",
+  },
+  {
+    id: 5,
+    cover: uploadToFirebase,
+    title: "File Upload to Firebase Web App",
+    handle: "https://younglings-uploadtofirebase.netlify.app",
+  },
+  {
+    id: 6,
+    cover: uploadToFirebase,
+    title: "File Upload to Firebase Web App",
+    handle: "https://younglings-uploadtofirebase.netlify.app",
   },
 ];
+
+export const testimonials = [
+  {
+    id: 1,
+    text: "Naeem has great communication skills and has really shown immense progress of interaction with his fellow team members. He has shown throughout the months that IT is his passion. He is highly recommended for work readiness, as he is a young, talented individual.",
+    image: rob,
+    name: "Robert Brady",
+    post: "Facilitator at CapaCiTi",
+  },
+  {
+    id: 2,
+    text: "Naeem is a young man who has worked hard at producing a good set of assessments on time. He is a pleasant and competent person who does his best to help others where he can. Technically his competence is good in Web Development. With self-gained knowledge in Computer systems.",
+    image: mari,
+    name: "Marilize Koen",
+    post: "Facilities Manager at CapaCiTi",
+  },
+];
+
 export const contact = [
   {
     icon: <AddLocationAltOutlined />,
-    text1: "2651 Main Street, Suit 124",
-    text2: "Seattle, WA, 98101",
+    text1: "Cape Town, South Africa",
   },
-  {
-    icon: <PhoneIphone />,
-    text1: "0123456789",
-    text2: "0345627891",
-  },
+
   {
     icon: <EmailOutlined />,
-    text1: "hello@thetheme.io",
-    text2: "inf0@brex-theme.io",
+    text1: "mogamatnaeemcarr@gmail.com",
   },
 ];
 export const social = [
   {
     icon: <Facebook />,
-  },
-  {
-    icon: <Twitter />,
+    link: "https://www.facebook.com/naeem.carr.3/",
   },
   {
     icon: <Instagram />,
+    link: "https://www.instagram.com/naeem__carr/",
   },
   {
-    icon: <YouTube />,
+    icon: <LinkedIn />,
+    link: "https://www.linkedin.com/in/mncarr/",
+  },
+  {
+    icon: <GitHub />,
+    link: "https://github.com/naeem2000",
   },
 ];

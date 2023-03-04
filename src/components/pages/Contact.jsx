@@ -1,8 +1,30 @@
-import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import { Heading } from "../common/Heading";
+import Typewriter from "typewriter-effect";
 import { contact } from "../../data/data";
+import React from "react";
 
 export const Contact = () => {
+  const [state, handleSubmit] = useForm("xdovzykr");
+  if (state.succeeded) {
+    return (
+      <div className="heroContainer">
+        <h1 className="heading" style={{ paddingTop: "50px" }}>
+          <Typewriter
+            options={{
+              strings: [
+                `Thanks for getting in touch, I will get back to you ASAP!`,
+              ],
+              autoStart: true,
+              loop: false,
+              deleteSpeed: 100000,
+              delay: 2,
+            }}
+          />
+        </h1>
+      </div>
+    );
+  }
   return (
     <>
       <div className="contact">
@@ -10,24 +32,66 @@ export const Contact = () => {
           <Heading title="Keep In Touch" />
           <div className="content flexsb">
             <div className="right">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="flex">
-                  <input type="text" placeholder="Name" data-aos="flip-left" />
                   <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    data-aos="flip-left"
+                  />
+                  <ValidationError
+                    prefix="Name"
+                    field="name"
+                    errors={state.errors}
+                  />
+                  <input
+                    id="email"
                     type="email"
+                    name="email"
                     placeholder="Email"
                     data-aos="flip-right"
                   />
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
+                  />
                 </div>
-                <input type="email" placeholder="Subject" data-aos="flip-up" />
+                <input
+                  id="subject"
+                  type="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  data-aos="flip-up"
+                />
+                <ValidationError
+                  prefix="Subject"
+                  field="subject"
+                  errors={state.errors}
+                />
                 <textarea
-                  name=""
-                  id=""
+                  id="message"
+                  placeholder="Message"
+                  type="text"
+                  name="message"
                   cols="30"
                   rows="10"
                   data-aos="flip-down"
-                ></textarea>
-                <button data-aos="zoom-in-up">Submit</button>
+                />
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
+                <button
+                  data-aos="zoom-in-up"
+                  type="submit"
+                  disabled={state.submitting}
+                >
+                  Submit
+                </button>
               </form>
             </div>
             <div className="left">

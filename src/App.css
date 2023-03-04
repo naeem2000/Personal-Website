@@ -56,8 +56,26 @@ h6 {
 }
 
 .container {
-  width: 80%;
+  max-width: 80%;
   margin: auto;
+}
+
+.buttonSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.buttonSectionbutton {
+  background: none;
+  border: 2px solid var(--primaryColor);
+}
+
+.buttonSectionbuttonActive {
+  background-color: var(--primaryColor);
+  border: 2px solid var(--primaryColor);
+  color: var(--white);
 }
 
 .flexsb {
@@ -316,18 +334,6 @@ article .box:hover .overlay {
   opacity: 1;
 }
 
-.catButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 40px 0;
-}
-
-.catButton button {
-  text-transform: capitalize;
-  margin-right: 20px;
-}
-
 /*---------TESTIMONIALS-------------*/
 
 .testimonials {
@@ -377,11 +383,19 @@ label {
 
 .contact {
   margin: 20px 0;
+  height: 95vh;
 }
 
 .contact .right,
 .contact .left {
   padding: 20px;
+}
+
+.contact .left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: left;
 }
 
 .contact .flex input:nth-child(1) {
