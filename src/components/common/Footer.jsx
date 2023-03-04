@@ -8,7 +8,9 @@ export const Footer = () => {
         <div className="socials">
           {social.map((item, i) => (
             <div key={i}>
-              <i data-aos="zoom-in-left">{item.icon}</i>
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <i data-aos="zoom-in-left">{item.icon}</i>
+              </a>
             </div>
           ))}
         </div>

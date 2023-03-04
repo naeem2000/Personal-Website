@@ -10,12 +10,9 @@ import {
   Public,
   PersonOutlined,
   AddLocationAltOutlined,
-  PhoneIphone,
   EmailOutlined,
   Facebook,
-  Twitter,
   Instagram,
-  YouTube,
   GitHub,
   LinkedIn,
 } from "@mui/icons-material";
@@ -234,28 +231,30 @@ export const contact = [
   {
     icon: <AddLocationAltOutlined />,
     text1: "Cape Town, South Africa",
+    link: "https://www.google.com/maps/place/Cape+Town/@-33.915538,18.6560594,8z/data=!4m6!3m5!1s0x1dcc500f8826eed7:0x687fe1fc2828aa87!8m2!3d-33.9248685!4d18.4240553!16zL20vMDF5ajI?hl=en_GB",
   },
 
   {
     icon: <EmailOutlined />,
     text1: "mogamatnaeemcarr@gmail.com",
+    link: "mailto:mogamatnaeemcarr@gmail.com",
   },
 ];
 export const social = [
   {
-    icon: <Facebook />,
+    icon: <Facebook style={{ fontSize: "40px" }} />,
     link: "https://www.facebook.com/naeem.carr.3/",
   },
   {
-    icon: <Instagram />,
+    icon: <Instagram style={{ fontSize: "40px" }} />,
     link: "https://www.instagram.com/naeem__carr/",
   },
   {
-    icon: <LinkedIn />,
+    icon: <LinkedIn style={{ fontSize: "40px" }} />,
     link: "https://www.linkedin.com/in/mncarr/",
   },
   {
-    icon: <GitHub />,
+    icon: <GitHub style={{ fontSize: "40px" }} />,
     link: "https://github.com/naeem2000",
   },
 ];

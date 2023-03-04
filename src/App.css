@@ -56,26 +56,41 @@ h6 {
 }
 
 .container {
-  max-width: 80%;
+  width: 80%;
   margin: auto;
 }
 
 .buttonSection {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
 .buttonSectionbutton {
   background: none;
   border: 2px solid var(--primaryColor);
+  border-radius: 50px 0px 0px 50px;
+}
+
+.buttonSectionbutton1 {
+  background: none;
+  border: 2px solid var(--primaryColor);
+  border-radius: 0 50px 50px 0;
 }
 
 .buttonSectionbuttonActive {
   background-color: var(--primaryColor);
   border: 2px solid var(--primaryColor);
   color: var(--white);
+  border-radius: 50px 0px 0px 50px;
+}
+
+.buttonSectionbuttonActive1 {
+  background-color: var(--primaryColor);
+  border: 2px solid var(--primaryColor);
+  color: var(--white);
+  border-radius: 0 50px 50px 0;
 }
 
 .flexsb {
@@ -131,6 +146,9 @@ header a {
     align-items: center;
     justify-content: center;
   }
+  .logo {
+    padding: 10px;
+  }
   header .nav {
     display: none;
   }
@@ -143,6 +161,7 @@ header a {
     display: block;
     font-size: 25px;
     background: none;
+    transition: all 1s ease;
   }
   .hideMenu {
     display: block;
@@ -427,19 +446,21 @@ footer {
 }
 
 footer i {
-  margin: 5px;
+  margin: 10px;
   color: var(--primaryColor);
 }
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 100%;
     margin: auto;
-    padding: 20px;
+    padding: 0;
+    width: 88%;
   }
+
   .hero {
     height: max-content;
   }
+
   .heroContent {
     width: 100%;
   }
@@ -461,6 +482,13 @@ footer i {
   .about .flex {
     flex-direction: column;
   }
+  .contact {
+    height: max-content;
+  }
+
+  .content {
+    height: max-content;
+  }
   .right,
   .left {
     width: 100%;
@@ -468,7 +496,8 @@ footer i {
   .grid4,
   .grid3 {
     grid-template-columns: repeat(2, 1fr);
-    overflow-x: scroll;
+    margin: auto;
+    grid-gap: 10px;
   }
   article {
     margin: 0;

@@ -17,7 +17,7 @@ export const Contact = () => {
               ],
               autoStart: true,
               loop: false,
-              deleteSpeed: 100000,
+              deleteSpeed: 10000000,
               delay: 2,
             }}
           />
@@ -98,8 +98,9 @@ export const Contact = () => {
               {contact.map((item, i) => (
                 <div className="box" data-aos="zoom-in" key={i}>
                   <i>{item.icon}</i>
-                  <p>{item.text1}</p>
-                  <p>{item.text2}</p>
+                  <a href={item.link}>
+                    <p>{item.text1}</p>
+                  </a>
                 </div>
               ))}
             </div>

@@ -22,7 +22,7 @@ export const Portfolio = () => {
             </button>
             <button
               className={
-                !page ? "buttonSectionbutton" : "buttonSectionbuttonActive"
+                !page ? "buttonSectionbutton1" : "buttonSectionbuttonActive1"
               }
               onClick={() => setPage(true)}
             >
