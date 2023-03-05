@@ -1,3 +1,4 @@
+import CV from "../../data/Curriculum Vitae of Mogamat Naeem Carr.pdf";
 import Typewriter from "typewriter-effect";
 import { home } from "../../data/data";
 import React from "react";
@@ -19,9 +20,9 @@ export const Hero = () => {
               />
             </h1>
             <p data-aos="fade-left">{val.desc}</p>
-            <button className="primaryBtn" data-aos="fade-up-right">
-              Download CV
-            </button>
+            <a href={CV} download={"CV of Mogamat Naeem Carr.pdf"}>
+              <button className="primaryBtn">Download CV</button>
+            </a>
           </div>
         ))}
       </section>

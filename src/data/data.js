@@ -1,30 +1,28 @@
-import {
-  Settings,
-  CropRotate,
-  ViewInAr,
-  PieChart,
-  Code,
-  BarChart,
-  CloudOutlined,
-  FavoriteBorder,
-  Public,
-  PersonOutlined,
-  AddLocationAltOutlined,
-  EmailOutlined,
-  Facebook,
-  Instagram,
-  GitHub,
-  LinkedIn,
-} from "@mui/icons-material";
-
 import uploadToFirebase from "./images/file-upload-to-firebase-webApp.png";
 import gdClone from "./images/google-drive-clone.PNG";
 import carwash from "./images/shafieks-carwash.png";
 import jobList from "./images/job-listing.PNG";
-import weather from "./images/weather.PNG";
 import faceDet from "./images/face-det.PNG";
+import weather from "./images/weather.PNG";
 import mari from "./images/marilize.jpg";
+import React from "./images/react.png";
+import Html from "./images/html.png";
+import Javascript from "./images/js.png";
+import Sass from "./images/sass.png";
+import Css from "./images/css.png";
 import rob from "./images/rob.jpeg";
+import {
+  AddLocationAltOutlined,
+  FavoriteBorder,
+  PersonOutlined,
+  EmailOutlined,
+  CloudOutlined,
+  Instagram,
+  LinkedIn,
+  Facebook,
+  GitHub,
+  Public,
+} from "@mui/icons-material";
 
 export const navLink = [
   {
@@ -58,52 +56,87 @@ export const home = [
     name: "NAEEM CARR",
     web: "WEB DEVELOPER",
     mobile: "MOBILE DEVELOPER",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+    desc: "My name is Mogamat Naeem Carr. I am a front-end Mobile and Web Developer based in Cape Town, South Africa. I have developed many types of front-ends from well known frameworks to full fledged native code. I love coding responsive and brutalist apps. I love nature, pizza and exploring.",
   },
 ];
 export const about = [
   {
-    desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur",
+    desc: "As a web and mobile developer with 3 years of experience, I am well-versed in various programming languages such as HTML, CSS, JavaScript, TypeScript, React, React-Native & SCSS. I have a proven track record of developing high-quality, responsive, and user-friendly websites and mobile applications that meet clients' needs and exceed their expectations. My expertise includes styling and developing applications that integrate with APIs, databases, and third-party services.",
     desc1:
-      "magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor si voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur",
+      "Additionally, I have experience with version control systems such as Git and deployment tools such as AWS, Firebase, and Netlify. I am a quick learner and enjoy staying up-to-date with the latest trends and technologies in the industry. I am passionate about coding and creating innovative solutions that solve real-world problems.",
   },
 ];
 export const services = [
   {
     id: 1,
-    icon: <Settings />,
-    title: "Creative Design",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    icon: Html,
+    title: "HTML",
+    desc: "Document Structure",
+    desc1: "Semantic Markup",
+    desc2: "Text Formatting",
+    desc3: "Links and Images",
+    desc4: "Forms and Input",
   },
   {
     id: 2,
-    icon: <CropRotate />,
-    title: "Clean Code",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    icon: Css,
+    title: "CSS",
+    desc: "Layouts",
+    desc1: "Selectors",
+    desc2: "Box Model",
+    desc3: "Typography",
+    desc4: "Transitions and Animations",
+    desc5: "Best Practices",
+    desc6: "Colors",
   },
   {
     id: 3,
-    icon: <ViewInAr />,
-    title: "Responsive Design",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    icon: Javascript,
+    title: "JavaScript",
+    desc: "Fundamentals",
+    desc1: "Object-Oriented Programming",
+    desc2: "DOM Manipulation",
+    desc3: "Asynchronous Programming",
+    desc4: "API's",
+    desc5: "Development tools",
   },
   {
     id: 4,
-    icon: <PieChart />,
-    title: "Material UI	",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    icon: React,
+    title: "React.Js	",
+    desc: "React Fundamentals",
+    desc1: "Redux",
+    desc2: "React-Router",
+    desc3: "Hooks",
+    desc4: "Server-side Rendering",
+    desc5: "API's",
+    desc6: "Styled Components",
   },
   {
     id: 5,
-    icon: <Code />,
-    title: "Material UI Icons",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    icon: React,
+    title: "React-Native",
+    desc: "React Native Fundamentals",
+    desc1: "Navigation",
+    desc2: "API's",
+    desc3: "Styling",
+    desc4: "Expo",
+    desc5: "Performance Optimization",
+    desc6: "Publishing",
+    desc7: "Debugging",
   },
   {
     id: 6,
-    icon: <BarChart />,
-    title: "High Performance Mobile Apps",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    icon: Sass,
+    title: "Sass",
+    desc: "Sass Fundamentals",
+    desc1: "Variables",
+    desc2: "Nesting",
+    desc3: "Mixins",
+    desc4: "Functions",
+    desc5: "Operators",
+    desc6: "Control Directives",
+    desc7: "Architecture",
   },
 ];
 export const project = [

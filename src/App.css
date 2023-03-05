@@ -75,12 +75,22 @@ button {
   padding: 15px 50px;
   border-radius: 50px;
   margin-top: 20px;
+  transition: 0.5s ease-in;
   cursor: pointer;
 }
 
 .primaryBtn {
   background: none;
   border: 2px solid var(--primaryColor);
+  background: linear-gradient(to left, transparent 50%, var(--primaryColor) 50%)
+    right;
+  background-size: 200%;
+}
+
+button:hover {
+  background-color: var(--primaryColor);
+  color: white;
+  background-position: left;
 }
 
 /* ----------HEADER----------- */
@@ -149,6 +159,9 @@ header a {
     margin-bottom: 20px;
     margin-top: 30px;
   }
+  .services {
+    margin-top: 0 !important;
+  }
 }
 
 section {
@@ -214,6 +227,12 @@ section {
   width: 50%;
 }
 
+section .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .left img {
   border-radius: 100%;
 }
@@ -225,9 +244,11 @@ section {
 /* ----------ABOUT----------- */
 
 .services {
+  margin-top: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: max-content;
 }
 
 .grid3 {
@@ -359,6 +380,11 @@ article .box {
 article .box:hover .overlay::after,
 article .box:hover .overlay {
   opacity: 1;
+}
+
+.boxedImage {
+  width: 100px;
+  border-radius: 50px;
 }
 
 /*---------TESTIMONIALS-------------*/

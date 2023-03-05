@@ -1,3 +1,4 @@
+import CV from "../../data/Curriculum Vitae of Mogamat Naeem Carr.pdf";
 import Me from "../../data/images/me-avatar.jpg";
 import { Heading } from "../common/Heading";
 import { about } from "../../data/data";
@@ -22,7 +23,9 @@ export const About = () => {
               <p>{val.desc}</p>
               <p>{val.desc1}</p>
               <div className="buttonarea">
-                <button className="primaryBtn">Download CV</button>
+                <a href={CV} download={"CV of Mogamat Naeem Carr.pdf"}>
+                  <button className="primaryBtn">Download CV</button>
+                </a>
               </div>
             </div>
           ))}
