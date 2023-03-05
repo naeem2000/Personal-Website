@@ -4,13 +4,13 @@ import carwash from "./images/shafieks-carwash.png";
 import jobList from "./images/job-listing.PNG";
 import faceDet from "./images/face-det.PNG";
 import weather from "./images/weather.PNG";
+import Javascript from "./images/js.png";
 import mari from "./images/marilize.jpg";
 import React from "./images/react.png";
 import Html from "./images/html.png";
-import Javascript from "./images/js.png";
 import Sass from "./images/sass.png";
-import Css from "./images/css.png";
 import rob from "./images/rob.jpeg";
+import Css from "./images/css.png";
 import {
   AddLocationAltOutlined,
   FavoriteBorder,
