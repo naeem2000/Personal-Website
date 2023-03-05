@@ -9,6 +9,7 @@ function App() {
     AOS.init();
     AOS.refresh();
   }, []);
+
   return (
     <div className="App">
       <Pages />

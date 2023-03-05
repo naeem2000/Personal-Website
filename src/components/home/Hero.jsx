@@ -9,7 +9,7 @@ export const Hero = () => {
         {home.map((val, i) => (
           <div className="heroContainer" key={i}>
             <h3>{val.text}</h3>
-            <h1>
+            <h1 style={{ height: "15vh" }}>
               <Typewriter
                 options={{
                   strings: [`${val.name}`, `${val.web}`, `${val.mobile}`],

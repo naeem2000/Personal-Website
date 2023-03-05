@@ -1,8 +1,7 @@
 import { FormatQuote } from "@mui/icons-material";
 import { testimonials } from "../../data/data";
-import "slick-carousel/slick/slick.css";
-
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import Slider from "react-slick";
 import React from "react";
 
@@ -10,7 +9,7 @@ export const Testimonials = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 400,
     slidesToShow: 1,
     slidesToScroll: 1,
   };

@@ -59,13 +59,8 @@ export const Portfolio = () => {
             <>
               <div className="content grid3">
                 {portfolio2?.map((items, i) => (
-                  <div>
-                    <a
-                      href={items.handle}
-                      target="__blank"
-                      rel="noreferror"
-                      key={i}
-                    >
+                  <div key={i}>
+                    <a href={items.handle} target="__blank" rel="noreferror">
                       <div className="box" data-aos="fade-up">
                         <div className="img">
                           <img src={items.cover} alt="portfolio" />
