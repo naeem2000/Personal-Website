@@ -501,7 +501,9 @@ footer i {
   .services .box {
     padding: 15px;
   }
-
+  .box p {
+    font-size: 12px;
+  }
   .heroContent {
     width: 100%;
   }
