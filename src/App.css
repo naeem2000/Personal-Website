@@ -363,6 +363,9 @@ article .box {
   cursor: pointer;
   transition: 0.5s;
   z-index: 2;
+  color: black;
+  font-size: 20px;
+  font-weight: 900 !important;
 }
 .overlay::after {
   content: "";
@@ -524,6 +527,9 @@ footer i {
   .contact .flexsb,
   .about .flex {
     flex-direction: column;
+  }
+  .overlay {
+    font-size: 15px;
   }
   .contact {
     height: max-content;
