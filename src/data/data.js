@@ -1,16 +1,19 @@
-import uploadToFirebase from "./images/file-upload-to-firebase-webApp.png";
-import gdClone from "./images/google-drive-clone.PNG";
-import carwash from "./images/shafieks-carwash.png";
-import jobList from "./images/job-listing.PNG";
-import faceDet from "./images/face-det.PNG";
-import weather from "./images/weather.PNG";
-import Javascript from "./images/js.png";
+import uploadToFirebase from "./images/file-upload-to-firebase-webApp.jpg";
+import gdClone from "./images/google-drive-clone.jpg";
+import carwash from "./images/shafieks-carwash.jpg";
+import jobList from "./images/job-listing.jpg";
+import CMRMNative from "./images/cmrmrn.jpg";
+import faceDet from "./images/face-det.jpg";
+import weather from "./images/weather.jpg";
+import NewsRn from "./images/newsrn.jpg";
+import ToDoRn from "./images/todorn.jpg";
+import Javascript from "./images/js.jpg";
 import mari from "./images/marilize.jpg";
-import React from "./images/react.png";
-import Html from "./images/html.png";
-import Sass from "./images/sass.png";
+import React from "./images/react.jpg";
+import Html from "./images/html.jpg";
+import Sass from "./images/sass.jpg";
 import rob from "./images/rob.jpeg";
-import Css from "./images/css.png";
+import Css from "./images/css.jpg";
 import {
   AddLocationAltOutlined,
   FavoriteBorder,
@@ -171,75 +174,69 @@ export const portfolio1 = [
     cover: carwash,
     title: "Shafiek's Carwash",
     handle: "https://shafiekscarwash.netlify.app",
+    divClass: "overlay",
   },
   {
     id: 2,
     cover: weather,
     title: "Weather App",
     handle: "https://weatherreactjsweb.netlify.app/",
+    divClass: "overlay",
   },
   {
     id: 3,
     cover: faceDet,
     title: "Face Detector (Desktop)",
     handle: "https://face-detect-reactjs.netlify.app/",
+    divClass: "overlay",
   },
   {
     id: 4,
     cover: gdClone,
     title: "Google Drive Clone",
     handle: "https://drive-clone-fe7b2.web.app/",
+    divClass: "overlay",
   },
   {
     id: 5,
     cover: jobList,
     title: "Job Listing",
     handle: "https://job-listing-39b59.web.app/",
+    divClass: "overlay",
   },
   {
     id: 6,
     cover: uploadToFirebase,
     title: "File Upload to Firebase Web App",
     handle: "https://younglings-uploadtofirebase.netlify.app",
+    divClass: "overlay",
   },
 ];
 
 export const portfolio2 = [
   {
     id: 1,
-    cover: uploadToFirebase,
-    title: "File Upload to Firebase Web App",
-    handle: "https://younglings-uploadtofirebase.netlify.app",
+    cover: CMRMNative,
+    title: "CMRM Mobile",
+    subtitle: "(source code)",
+    handle: "https://github.com/naeem2000/Claremont-Mosque-React-Native",
+    class: "mobile-apps",
   },
   {
     id: 2,
-    cover: uploadToFirebase,
-    title: "File Upload to Firebase Web App",
-    handle: "https://younglings-uploadtofirebase.netlify.app",
+    cover: NewsRn,
+    title: "News App",
+    subtitle: "(source code)",
+    handle: "https://github.com/naeem2000/React-Native-News-App",
+    divClass: "mobileoverlay",
   },
   {
     id: 3,
-    cover: uploadToFirebase,
-    title: "File Upload to Firebase Web App",
-    handle: "https://younglings-uploadtofirebase.netlify.app",
-  },
-  {
-    id: 4,
-    cover: uploadToFirebase,
-    title: "File Upload to Firebase Web App",
-    handle: "https://younglings-uploadtofirebase.netlify.app",
-  },
-  {
-    id: 5,
-    cover: uploadToFirebase,
-    title: "File Upload to Firebase Web App",
-    handle: "https://younglings-uploadtofirebase.netlify.app",
-  },
-  {
-    id: 6,
-    cover: uploadToFirebase,
-    title: "File Upload to Firebase Web App",
-    handle: "https://younglings-uploadtofirebase.netlify.app",
+    cover: ToDoRn,
+    title: "To-Do App",
+    subtitle: "(source code)",
+    handle: "https://github.com/naeem2000/react-native-todo-app",
+    class: "mobile-apps",
   },
 ];
 

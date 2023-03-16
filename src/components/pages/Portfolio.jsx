@@ -18,7 +18,7 @@ export const Portfolio = () => {
               }
               onClick={() => setPage(false)}
             >
-              1
+              Web
             </button>
             <button
               className={
@@ -26,7 +26,7 @@ export const Portfolio = () => {
               }
               onClick={() => setPage(true)}
             >
-              2
+              Mobile
             </button>
           </div>
         </div>
@@ -62,13 +62,20 @@ export const Portfolio = () => {
                   <div key={i}>
                     <a href={items.handle} target="__blank" rel="noreferror">
                       <div className="box" data-aos="fade-up">
-                        <div className="img">
-                          <img src={items.cover} alt="portfolio" />
+                        <div className="mobileimg">
+                          <img
+                            src={items.cover}
+                            alt="portfolio"
+                            className="mobile-apps"
+                          />
                         </div>
-                        <div className="overlay">
-                          <h3>{items.title}</h3>
-                          <span>{items.name}</span>
-                          <Visibility />
+                        <div className="overlay-mobile">
+                          <h3 style={{ textAlign: "center" }}>{items.title}</h3>
+                          <h3>{items.subtitle}</h3>
+                          <span style={{ textAlign: "center" }}>
+                            {items.name}
+                            <Visibility />
+                          </span>
                         </div>
                       </div>
                     </a>

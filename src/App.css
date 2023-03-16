@@ -308,6 +308,10 @@ section .left {
   margin-bottom: 20px;
 }
 
+.img img {
+  width: 100%;
+}
+
 .buttonSectionbutton {
   background: none;
   border: 2px solid var(--primaryColor);
@@ -367,6 +371,12 @@ article .box {
   font-size: 20px;
   font-weight: 900 !important;
 }
+.overlay-mobile {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+  color: var(--primaryColor);
+}
 .overlay::after {
   content: "";
   position: absolute;
@@ -388,6 +398,10 @@ article .box:hover .overlay {
 .boxedImage {
   width: 100px;
   border-radius: 50px;
+}
+
+.mobile-apps {
+  width: 70% !important;
 }
 
 /*---------TESTIMONIALS-------------*/
@@ -420,6 +434,16 @@ article .box:hover .overlay {
   height: 120px;
   margin: auto;
   border-radius: 50%;
+  border: 3px solid var(--primaryColor);
+}
+
+.mobileimg img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 80%;
+  margin: auto;
   border: 3px solid var(--primaryColor);
 }
 .testimonials img {
@@ -553,5 +577,9 @@ footer i {
   article {
     margin: 0;
     padding-bottom: 50px;
+  }
+  .overlay-mobile {
+    font-size: 15px;
+    margin: 5px;
   }
 }
