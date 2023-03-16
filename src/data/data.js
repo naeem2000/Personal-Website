@@ -1,10 +1,12 @@
 import uploadToFirebase from "./images/file-upload-to-firebase-webApp.jpg";
-import gdClone from "./images/google-drive-clone.jpg";
 import carwash from "./images/shafieks-carwash.jpg";
 import jobList from "./images/job-listing.jpg";
 import CMRMNative from "./images/cmrmrn.jpg";
+import loginmui from "./images/loginmui.jpg";
 import faceDet from "./images/face-det.jpg";
 import weather from "./images/weather.jpg";
+import cmrmweb from "./images/cmrmweb.jpg";
+import todoweb from "./images/todoweb.jpg";
 import NewsRn from "./images/newsrn.jpg";
 import ToDoRn from "./images/todorn.jpg";
 import Javascript from "./images/js.jpg";
@@ -171,41 +173,55 @@ export const project = [
 export const portfolio1 = [
   {
     id: 1,
+    cover: loginmui,
+    title: "Login Page - Material UI",
+    handle: "https://login-react-app-puma.netlify.app/",
+    divClass: "overlay",
+  },
+  {
+    id: 2,
+    cover: cmrmweb,
+    title: "Claremont Main Road Mosque",
+    handle: "https://cmrm.netlify.app/",
+    divClass: "overlay",
+  },
+  {
+    id: 3,
     cover: carwash,
     title: "Shafiek's Carwash",
     handle: "https://shafiekscarwash.netlify.app",
     divClass: "overlay",
   },
   {
-    id: 2,
+    id: 4,
     cover: weather,
     title: "Weather App",
     handle: "https://weatherreactjsweb.netlify.app/",
     divClass: "overlay",
   },
   {
-    id: 3,
+    id: 5,
     cover: faceDet,
     title: "Face Detector (Desktop)",
     handle: "https://face-detect-reactjs.netlify.app/",
     divClass: "overlay",
   },
   {
-    id: 4,
-    cover: gdClone,
-    title: "Google Drive Clone",
-    handle: "https://drive-clone-fe7b2.web.app/",
+    id: 6,
+    cover: todoweb,
+    title: "To-Do Web App",
+    handle: "https://cmrm.netlify.app/",
     divClass: "overlay",
   },
   {
-    id: 5,
+    id: 7,
     cover: jobList,
     title: "Job Listing",
     handle: "https://job-listing-39b59.web.app/",
     divClass: "overlay",
   },
   {
-    id: 6,
+    id: 8,
     cover: uploadToFirebase,
     title: "File Upload to Firebase Web App",
     handle: "https://younglings-uploadtofirebase.netlify.app",

@@ -138,6 +138,7 @@ header a {
     display: block;
     font-size: 25px;
     background: none;
+    margin-top: 15px;
     transition: all 1s ease;
   }
   .hideMenu {
@@ -515,7 +516,7 @@ footer i {
   .container {
     margin: auto;
     padding: 0;
-    width: 88%;
+    width: 89%;
   }
 
   .heroContainer {

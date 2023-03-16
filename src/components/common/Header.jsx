@@ -21,7 +21,7 @@ export const Header = () => {
             ))}
           </div>
           <div className="toggle">
-            <Hamburger toggled={responsive} toggle={setResponsive} />
+            <Hamburger size={24} toggled={responsive} toggle={setResponsive} />
           </div>
         </div>
       </header>
