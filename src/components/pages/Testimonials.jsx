@@ -24,7 +24,9 @@ export const Testimonials = () => {
                   <i data-aos="zoom-out-up">
                     <FormatQuote />
                   </i>
-                  <p data-aos="zoom-out-down">{val.text}</p>
+                  <p style={{ fontWeight: "bold" }} data-aos="zoom-out-down">
+                    {val.text}
+                  </p>
                   <div className="img">
                     <img src={val.image} alt="img" data-aos="zoom-out-right" />
                   </div>

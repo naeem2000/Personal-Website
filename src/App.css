@@ -35,7 +35,7 @@ a:hover {
 
 p {
   color: var(--silver);
-  font-size: 15px;
+  font-size: 18px;
   line-height: 30px;
   margin: 20px 0;
 }
@@ -117,6 +117,10 @@ header a {
   transition: all 0.5s;
 }
 
+.typewriter {
+  height: max-content;
+}
+
 @media screen and (max-width: 768px) {
   .buttonarea {
     display: flex;
@@ -163,6 +167,9 @@ header a {
   .services {
     margin-top: 0 !important;
   }
+  .typewriter {
+    height: 10vh;
+  }
 }
 
 section {
@@ -188,7 +195,7 @@ section {
   left: 0;
   background-image: url("./data/images/home-bg.jpg");
   background-size: cover;
-  opacity: 0.5;
+  opacity: 0.3;
   background-attachment: fixed;
   z-index: -1;
   width: 100%;
@@ -530,7 +537,7 @@ footer i {
     padding: 15px;
   }
   .box p {
-    font-size: 12px;
+    font-size: 15px;
   }
   .heroContent {
     width: 100%;

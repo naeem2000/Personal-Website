@@ -10,7 +10,7 @@ export const Hero = () => {
         {home.map((val, i) => (
           <div className="heroContainer" key={i}>
             <h3>{val.text}</h3>
-            <h1 style={{ height: "15vh" }}>
+            <h1 className="typewriter">
               <Typewriter
                 options={{
                   strings: [`${val.name}`, `${val.web}`, `${val.mobile}`],
@@ -19,7 +19,9 @@ export const Hero = () => {
                 }}
               />
             </h1>
-            <p data-aos="fade-left">{val.desc}</p>
+            <p data-aos="fade-left" style={{ fontWeight: "bold" }}>
+              {val.desc}
+            </p>
             <a href={CV} download={"CV of Mogamat Naeem Carr.pdf"}>
               <button className="primaryBtn">Download CV</button>
             </a>

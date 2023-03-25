@@ -40,6 +40,7 @@ export const Contact = () => {
                     name="name"
                     placeholder="Name"
                     data-aos="flip-left"
+                    required
                   />
                   <ValidationError
                     prefix="Name"
@@ -52,6 +53,7 @@ export const Contact = () => {
                     name="email"
                     placeholder="Email"
                     data-aos="flip-right"
+                    required
                   />
                   <ValidationError
                     prefix="Email"
@@ -65,6 +67,7 @@ export const Contact = () => {
                   name="subject"
                   placeholder="Subject"
                   data-aos="flip-up"
+                  required
                 />
                 <ValidationError
                   prefix="Subject"
@@ -79,6 +82,7 @@ export const Contact = () => {
                   cols="30"
                   rows="10"
                   data-aos="flip-down"
+                  required
                 />
                 <ValidationError
                   prefix="Message"

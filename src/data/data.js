@@ -66,7 +66,7 @@ export const home = [
 ];
 export const about = [
   {
-    desc: "As a web and mobile developer with 3 years of experience, I am well-versed in various programming languages such as HTML, CSS, JavaScript, TypeScript, React, React-Native & SCSS. I have a proven track record of developing high-quality, responsive, and user-friendly websites and mobile applications that meet clients' needs and exceed their expectations. My expertise includes styling and developing applications that integrate with APIs, databases, and third-party services.",
+    desc: "As a web and mobile developer with 3 years of experience, I am well-versed in various programming languages such as HTML, CSS, JavaScript, TypeScript, React, React-Native & SCSS. I have a proven track record of developing high-quality, responsive, and user-friendly websites and mobile applications that meet employers' needs and exceed their expectations. My expertise includes styling and developing applications that integrate with APIs, databases, and third-party services.",
     desc1:
       "Additionally, I have experience with version control systems such as Git and deployment tools such as AWS, Firebase, and Netlify. I am a quick learner and enjoy staying up-to-date with the latest trends and technologies in the industry. I am passionate about coding and creating innovative solutions that solve real-world problems.",
   },
