@@ -1,21 +1,11 @@
-import splashData from './loaderAnimated.json';
+import splashData from './animation_lkuvushm.json';
 import Lottie from 'lottie-react';
 import React from 'react';
 
 export const Splash = () => {
 	return (
-		<>
-			<Lottie
-				style={{
-					display: 'flex',
-					width: '100%',
-					height: '100%',
-					alignItems: 'center',
-					justifyContent: 'center',
-				}}
-				animationData={splashData}
-				loop={true}
-			/>
-		</>
+		<div className='splash'>
+			<Lottie animationData={splashData} loop={true} className='splasher' />
+		</div>
 	);
 };
